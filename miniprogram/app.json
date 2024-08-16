@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/particulars/particulars",
+    "pages/diagram/diagram",
+    "pages/tally/tally",
+    "pages/addButton/addButton",
+    "pages/addInButton/addInButton"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "账本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#8cbb19",
+    "list": [
+      {
+        "pagePath": "pages/particulars/particulars",
+        "text": "明细",
+        "iconPath": "images/particulars.png",
+        "selectedIconPath": "images/particulars_select.png"
+      },
+      {
+        "pagePath": "pages/tally/tally",
+        "text": "记账",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add_select.png"
+      },
+      {
+        "pagePath": "pages/diagram/diagram",
+        "text": "图表",
+        "iconPath": "images/diagram.png",
+        "selectedIconPath": "images/diagram_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

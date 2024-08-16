@@ -1,0 +1,64 @@
+<!--pages/particulars/particulars.wxml-->
+<!-- 概况 -->
+<view class="survey">
+  <view class="left">
+    <view class="nian">
+      {{ nian }}年
+    </view>
+    <picker class="yue" bindchange="click" value="{{index}}" range="{{ monthArr }}">
+      {{ yue1 }}月👇
+    </picker>
+  </view>
+  <view class="right">
+    <view class="I">
+      <view class="up">
+        收入
+      </view>
+      <view class="down">
+        {{ income }}
+      </view>
+    </view>
+    <view class="E">
+      <view class="up">
+        支出
+      </view>
+      <view class="down">
+        {{ expend }}
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 条目 -->
+<view class="entry" wx:for="{{ message }}" wx:key="index" >
+  <view>
+    <view class="title">
+      <view class="date">
+        {{ item.priceDate }}
+      </view>
+      <view class="IAE">
+        <view wx:if="{{item.IAE}}">
+          收入
+        </view>
+        <view wx:if="{{!item.IAE}}">
+          支出
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <view class="icon">
+        <image src="{{ item.img }}" mode="" />
+        <view class="text">
+          {{ item.text }}
+        </view>
+      </view>
+      <input style="width: 150rpx;" maxlength="5" type="text" value="{{ item.remark }}" bindblur="getRemark" />
+     <view class="result">
+       <input maxlength="5" class="inp" type="text" value="{{ item.result1 }}" bindblur="getResult1" />元
+     </view> 
+    </view>
+    <view class="feet">
+      <button style="width: 300rpx" bind:tap="update" data-index="{{ index }}">修改</button>
+      <button style="width: 300rpx" bind:tap="delete" data-id="{{ item._id }}">删除</button>
+    </view>
+  </view>
+</view>

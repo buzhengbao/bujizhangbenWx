@@ -1,0 +1,23 @@
+<!--pages/addButton/addButton.wxml-->
+<view class="container">
+  <view class="page-uploader">
+  <image class="uploader_img" wx:if="{{imgSrc}}" src="{{imgSrc}}" bindload="loaded"></image>
+    <view class="weui-uploader__input-box">
+      <view aria-role="button" aria-label="上传" class="weui-uploader__input" bindtap="chooseImage"></view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">标签名称</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__bd">
+          <input bindblur="getValue" data-name="title" value="{{ title }}" class="weui-input" placeholder-class="weui-input__placeholder" placeholder="请输入标签名称" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bind:tap="save">添加</button>
+  </view>
+
+</view>

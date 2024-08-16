@@ -1,0 +1,70 @@
+/* components/tButton/tButton.wxss */
+@import '../../style/weui.wxss';
+
+.icon {
+  margin-top: 20px;
+  height: 100rpx;
+  width:100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  background-color: #8cbb19;
+}
+
+image {
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.text {
+  width: 100rpx;
+  text-align: center;
+}
+
+.counter {
+  height: 5500rpx;
+}
+
+.price {
+  margin: 20rpx;
+  text-align: end;
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+
+.remark {
+  padding: 10rpx 20rpx;
+  font-size: 40rpx;
+  background-color: rgb(218, 218, 218);
+  height: 50rpx;
+  display: flex;
+}
+
+.remark input {
+  margin-top: 7rpx;
+}
+
+.button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 300rpx;
+  margin-top: 30rpx;
+}
+
+.button view {
+  width: 140rpx;
+  height: 140rpx;
+  float: left;
+  background-color: #ffffff;
+  margin: 4rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 60rpx;
+  border: solid 1px;
+  border-radius: 50rpx;
+}
+.button view:hover{
+  background-color: rgba(233, 233, 233, 0.774);
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tButton":"/components/tButton/tButton"
+  }
+}

@@ -1,0 +1,76 @@
+<!--components/tButton/tButton.wxml-->
+<!-- 图标 -->
+<view bind:tap="open3">
+  <view class="icon">
+    <image bindblur="getValue" src="{{ img }}" mode="" />
+  </view>
+  <view bindblur="getValue" class="text">
+    {{ text }}
+  </view>
+</view>
+<!-- 计算器 -->
+<view aria-role="dialog" aria-modal="true">
+  <view class="weui-mask weui-transition {{dialog3 ? 'weui-transition_show' : ''}}" bindtap="close" aria-role="button" aria-label="关闭"></view>
+  <view class="weui-half-screen-dialog weui-transition {{dialog3 ? 'weui-transition_show' : ''}} {{wrap1 ? 'weui-half-screen-dialog_btn-wrap' : ''}}">
+    <view class="counter">
+      <view class="price" bindblur="getValue" data-name="result">
+        {{ result1 }}
+      </view>
+      <view class="remark">
+        备注：<input type="text" data-name="remark" placeholder="点击填写备注" bindblur="getValue" />
+      </view>
+      <view class="button">
+        <view bind:tap="clickButton" id="{{ id7 }}">
+          7
+        </view>
+        <view bind:tap="clickButton" id="{{ id8 }}">
+          8
+        </view>
+        <view bind:tap="clickButton" id="{{ id9 }}">
+          9
+        </view>
+        <view style="font-size: 23rpx;font-weight: 1000;">
+        <picker bindblur="getValue" mode="date" value="{{ date }}" bindchange="dateChange" data-name="priceDate">
+          {{ priceDate }}
+        </picker>
+        </view>
+        <view bind:tap="clickButton" id="{{ id4 }}">
+          4
+        </view>
+        <view bind:tap="clickButton" id="{{ id5 }}">
+          5
+        </view>
+        <view bind:tap="clickButton" id="{{ id6 }}">
+          6
+        </view>
+        <view bind:tap="clickButton" id="{{ add }}">
+          +
+        </view>
+        <view bind:tap="clickButton" id="{{ id1 }}">
+          1
+        </view>
+        <view bind:tap="clickButton" id="{{ id2 }}">
+          2
+        </view>
+        <view bind:tap="clickButton" id="{{ id3 }}">
+          3
+        </view>
+        <view bind:tap="clickButton" id="{{ sub }}">
+          -
+        </view>
+        <view bind:tap="clickButton" id="{{ dot }}">
+          .
+        </view>
+        <view bind:tap="clickButton" id="{{ id0 }}">
+          0
+        </view>
+        <view bind:tap="clickButton" id="{{ back }}">
+          ←
+        </view>
+        <view style="background-color: #8cbb19;" bind:tap="clickButton" id="{{ equ }}">
+          完成
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

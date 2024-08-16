@@ -1,0 +1,34 @@
+/* pages/diagram/diagram.wxss */
+/**index.wxss**/
+.charts {
+  width: 750rpx;
+  height: 500rpx;
+}
+.survey{
+  background-color: #8cbb19;
+  height: 190rpx;
+  display: flex;
+}
+.left{
+  width: 25%;
+  border-right: 1px solid;
+  margin: 20rpx;
+}
+.nian{
+  font-weight: 400;
+}
+.yue{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.right{
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10rpx;
+}
+
+.down{
+  padding-top: 10rpx;
+  font-size: 50rpx;
+}

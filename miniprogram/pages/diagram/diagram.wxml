@@ -1,0 +1,42 @@
+<!--pages/diagram/diagram.wxml-->
+<!-- 概况 -->
+<view class="survey">
+  <view class="left">
+    <view class="nian">
+      {{ nian }}年
+    </view>
+    <picker class="yue" bindchange="click" value="{{index}}" range="{{ monthArr }}">
+      {{ yue1 }}月👇
+    </picker>
+  </view>
+  <view class="right">
+    <view class="I">
+      <view class="up">
+        收入
+      </view>
+      <view class="down">
+        {{ income }}
+      </view>
+    </view>
+    <view class="E">
+      <view class="up">
+        支出
+      </view>
+      <view class="down">
+        {{ expend }}
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  支出
+  <view class="charts">
+    <canvas canvas-id="asd" id="asd" type="2d" class="charts" bindtouchend="tap" />
+  </view>
+</view>
+<view>
+  收入
+  <view class="charts">
+    <canvas canvas-id="qwe" id="qwe" type="2d" class="charts" bindtouchend="tap" />
+  </view>
+</view>

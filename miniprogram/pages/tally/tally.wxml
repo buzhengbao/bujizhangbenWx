@@ -1,0 +1,19 @@
+<!--pages/tally/tally.wxml-->
+<!-- 收入支出按钮 -->
+<view class="title">
+  <button bind:tap="expend">支出</button>
+  <button bind:tap="income">收入</button>
+</view>
+<!-- 收入支出选项卡片 -->
+<view class="card" wx:if="{{ expenda }}">
+  <view class="card1" wx:for="{{ iconList }}" wx:key="_id">
+    <tButton text="{{ item.text }}" img="{{ item.imgSrc }}"></tButton>
+  </view>
+  <view class="add" bind:tap="add">+</view>
+</view>
+<view class="card" wx:if="{{ incomea }}">
+  <view class="card1" wx:for="{{ iconInList }}" wx:key="_id">
+    <tButton text="{{ item.text }}" img="{{ item.imgSrc }}" IAE="true"></tButton>
+  </view>
+  <view class="add" bind:tap="addIn">+</view>
+</view>

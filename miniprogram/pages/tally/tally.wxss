@@ -1,0 +1,32 @@
+/* pages/tally/tally.wxss */
+.title{
+  display: flex;
+}
+.card{
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-top: 25rpx;
+  padding-bottom: 20rpx;
+  box-shadow: 0 15rpx 20rpx rgba(0, 0, 0, 0.4), 0 0 6rpx rgba(0, 0, 0, 0.04);
+  flex-wrap: wrap;
+}
+.card1{
+  width: 60rpx;
+  padding: 0px 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.add{
+  font-weight: 900;
+  font-size: 90rpx;
+  margin-top: 47rpx;
+  height: 100rpx;
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50rpx;
+  background-color: #8cbb19;
+}
